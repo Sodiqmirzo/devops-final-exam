@@ -1,0 +1,11 @@
+NAMESPACE    NAME     READY   STATUS    RESTARTS   AGE
+abdulaziz    nginx1   1/1     Running   0          109s
+abdulaziz    nginx2   1/1     Running   0          86s
+asilbek      nginx1   1/1     Running   0          107s
+asilbek      nginx2   1/1     Running   0          61s
+asrorbek     nginx1   1/1     Running   0          5m26s
+asrorbek     nginx2   1/1     Running   0          4m55s
+negmatov     nginx1   1/1     Running   0          39s
+negmatov     nginx2   1/1     Running   0          39s
+sirojiddin   nginx1   1/1     Running   0          107s
+sirojiddin   nginx2   1/1     Running   0          5s

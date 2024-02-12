@@ -1,0 +1,1 @@
+{"domain":"test.ittech.uz","endpoint":"/check-ingress","full_path:":"test.ittech.uz/check-ingress"}

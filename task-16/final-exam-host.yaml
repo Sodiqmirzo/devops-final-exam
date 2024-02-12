@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: final-exam-host
+  namespace: sodikmirzo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: final-exam-host
+  template:
+    metadata:
+      labels:
+        app: final-exam-host
+    spec:
+      containers:
+        - name: flask-app
+          image: nvrbckdown/flask-app:final-exam
+          volumeMounts:
+            - name: host-volume
+              mountPath: /mnt
+      volumes:
+        - name: host-volume
+          hostPath:
+            path: /mnt
+            type: Directory

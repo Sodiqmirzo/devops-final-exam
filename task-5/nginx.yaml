@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: sodikmirzo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        env:
+        - name: AUTHOR
+          valueFrom:
+            configMapKeyRef:
+              name: config-info
+              key: AUTHOR
+        - name: EXAM_TYPE
+          valueFrom:
+            configMapKeyRef:
+              name: config-info
+              key: EXAM_TYPE
+        command: ['sh', '-c', 'echo "My name is $AUTHOR and this is my $EXAM_TYPE"']

@@ -1,0 +1,5 @@
+NAME                                 READY   STATUS             RESTARTS      AGE
+busybox-echo-85485b6868-dv694        0/1     CrashLoopBackOff   1 (9s ago)    12s
+
+
+kubectl logs busybox-echo-85485b6868-dv694 -n sodikmirzo

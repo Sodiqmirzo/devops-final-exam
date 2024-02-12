@@ -1,0 +1,9 @@
+NAME                                 READY   STATUS             RESTARTS      AGE
+busybox-echo-85485b6868-dv694        0/1     CrashLoopBackOff   5 (21s ago)   3m19s
+flask-application-576c5b94c5-dt9rh   1/1     Running            0             23m
+flask-application-576c5b94c5-fdps8   1/1     Running            0             23m
+nginx-deployment-845945b54d-n59jx    0/1     Completed          0             3s
+nginx1-6f49dd49b7-5xsh2              1/1     Running            0             46m
+nginx2-647797cd8d-pfxvt              1/1     Running            0             46m
+
+kubectl logs nginx-deployment-845945b54d-n59jx -n sodikmirzo

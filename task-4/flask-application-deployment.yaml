@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: flask-application
+  name: flask-application
+  namespace: sodikmirzo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flask-application
+  template:
+    metadata:
+      labels:
+        app: flask-application
+    spec:
+      containers:
+        - image: nvrbckdown/flask-app:last-practice
+          name: flask
+          ports:
+            - containerPort: 5000
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "150m"
+            requests:
+              memory: "64Mi"
+              cpu: "75m"

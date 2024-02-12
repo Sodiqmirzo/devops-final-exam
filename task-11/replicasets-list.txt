@@ -1,0 +1,12 @@
+kubectl get rs -n sodikmirzo  > replicasets-list.txt
+
+NAME                            DESIRED   CURRENT   READY   AGE
+busybox-echo-6b54676f4f         0         0         0       34m
+busybox-echo-85485b6868         1         1         0       33m
+busybox-echo-867c5db647         0         0         0       34m
+final-exam-7497c68dc9           1         1         1       25m
+flask-application-576c5b94c5    2         2         2       53m
+frontend-something-79cf9c8c67   1         1         1       2m49s
+nginx-deployment-845945b54d     1         1         0       30m
+nginx1-6f49dd49b7               1         1         1       76m
+nginx2-647797cd8d               1         1         1       76m

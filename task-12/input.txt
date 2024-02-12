@@ -1,0 +1,24 @@
+kubectl get pods -n sodikmirzo
+
+NAME                                  READY   STATUS             RESTARTS         AGE
+busybox-echo-85485b6868-dv694         0/1     CrashLoopBackOff   12 (4m11s ago)   40m
+final-exam-7497c68dc9-jqh4r           1/1     Running            0                33m
+flask-application-576c5b94c5-dt9rh    1/1     Running            0                60m
+flask-application-576c5b94c5-fdps8    1/1     Running            0                60m
+frontend-something-79cf9c8c67-brbwg   1/1     Running            0                10m
+nginx-deployment-845945b54d-n59jx     0/1     CrashLoopBackOff   12 (51s ago)     37m
+nginx1-6f49dd49b7-5xsh2               1/1     Running            0                84m
+nginx2-647797cd8d-pfxvt               1/1     Running            0                84m
+node-printer-28462534-4c28w           0/1     Completed          0                78s
+node-printer-28462534-4mgss           0/1     Completed          0                85s
+node-printer-28462534-54f85           0/1     Completed          0                78s
+node-printer-28462534-55rs4           0/1     Completed          0                85s
+node-printer-28462534-5bwkd           0/1     Completed          0                76s
+node-printer-28462534-692cf           0/1     Completed          0                78s
+node-printer-28462534-g4rhj           0/1     Completed          0                76s
+node-printer-28462534-mmtxh           0/1     Completed          0                85s
+node-printer-28462534-nnk7w           0/1     Completed          0                85s
+node-printer-28462534-xlcq7           0/1     Completed          0                85s
+
+
+kubectl logs node-printer-28462534-xlcq7 -n sodikmirzo

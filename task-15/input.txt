@@ -1,0 +1,1 @@
+curl https://k8s.ittech.uz
